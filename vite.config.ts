@@ -25,12 +25,6 @@ export default defineConfig(({ mode }) => {
         honox(),
         devServer({ entry }),
         ssg({ entry }),
-        {
-          name: "emptyOutDir",
-          config() {
-            return { build: { emptyOutDir: false } };
-          },
-        },
       ],
     };
   }
