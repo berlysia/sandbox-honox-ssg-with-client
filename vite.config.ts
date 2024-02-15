@@ -12,19 +12,16 @@ export default defineConfig(({ mode }) => {
     return {
       plugins: [client()],
       build: {
-        outDir: ".hono",
         emptyOutDir: true,
       },
     };
   }
 
   {
-    // SSG build
+    // Dev build
     return {
       plugins: [
         honox(),
-        devServer({ entry }),
-        ssg({ entry }),
       ],
     };
   }
