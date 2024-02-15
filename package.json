@@ -3,7 +3,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --mode client && NODE_ENV=production bun app/build.ts",
+    "build": "vite build --mode client && NODE_ENV=production npx tsx app/build.ts",
     "preview": "wrangler pages dev ./dist",
     "deploy": "$npm_execpath run build && wrangler pages deploy ./dist"
   },
@@ -15,6 +15,7 @@
   "devDependencies": {
     "@hono/vite-dev-server": "^0.5.1",
     "@hono/vite-ssg": "^0.0.1",
+    "tsx": "^4.7.1",
     "vite": "^5.0.12",
     "wrangler": "^3.27.0"
   }
