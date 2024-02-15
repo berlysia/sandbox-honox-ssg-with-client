@@ -13,8 +13,8 @@
     "honox": "^0.1.1"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20240208.0",
-    "@hono/vite-cloudflare-pages": "^0.2.4",
+    "@hono/vite-dev-server": "^0.5.1",
+    "@hono/vite-ssg": "^0.0.1",
     "vite": "^5.0.12",
     "wrangler": "^3.27.0"
   }
